@@ -1,40 +1,12 @@
 # python-test-repo
 
-[![Build Status](https://github.com/ONSdigital/python-test-repo/actions/workflows/ci.yml/badge.svg)](https://github.com/ONSdigital/python-test-repo/actions/workflows/ci.yml) <!-- Uncomment after enabling MegaLinter by renaming [mega-linter.yml.example](.github/mega-linter.yml.example) to mega-linter.yml and moving it to the [.github/workflow](.github/workflow) folder
-[![Build Status](https://github.com/ONSdigital/python-test-repo/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/ONSdigital/python-test-repo/actions/workflows/mega-linter.yml)
--->
-[![Build Status](https://github.com/ONSdigital/python-test-repo/actions/workflows/codeql.yml/badge.svg)](https://github.com/ONSdigital/python-test-repo/actions/workflows/codeql.yml)
+[![Build Status](https://github.com/ONSdigital/python-test-repo/actions/workflows/ci.yml/badge.svg)](https://github.com/ONSdigital/python-test-repo/actions/workflows/ci.yml) [![Build Status](https://github.com/ONSdigital/python-test-repo/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/ONSdigital/python-test-repo/actions/workflows/mega-linter.yml) [![Build Status](https://github.com/ONSdigital/python-test-repo/actions/workflows/codeql.yml/badge.svg)](https://github.com/ONSdigital/python-test-repo/actions/workflows/codeql.yml)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Linting: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 [![poetry-managed](https://img.shields.io/badge/poetry-managed-blue)](https://python-poetry.org/)
 [![License - MIT](https://img.shields.io/badge/licence%20-MIT-1ac403.svg)](https://github.com/ONSdigital/python-test-repo/blob/main/LICENSE)
-
----
-
-## Quick Setup: Enable MegaLinter CI
-
-This repository includes a pre-configured MegaLinter workflow for automated code quality checks, but it needs to be manually enabled:
-
-**To activate MegaLinter:**
-
-1. Rename [.github/mega-linter.yml.example](.github/mega-linter.yml.example) to `.github/mega-linter.yml`
-2. Move the file from [.github](.github) to the [.github/workflows](.github/workflows) folder
-3. Commit and push the change
-
-**Why this step is needed:**
-GitHub Actions security restrictions prevent automatic creation of workflow files during template initialisation.
-Learn more about [GitHub Token permissions and workflow limitations](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token).
-
-Once enabled, MegaLinter will automatically run on all Pull Requests and commits to `main`, checking:
-
-- Python code quality (Ruff, Black, Pylint, MyPy)
-- GitHub Actions workflows
-- Documentation formatting
-- Shell scripts, Dockerfiles, and more
-
----
 
 python-test-repo
 
